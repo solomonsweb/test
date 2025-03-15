@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="60x60" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sol's Portfolio</title>
+    <meta name="color-scheme" content="dark light" />
+    <meta name="google-site-verification" content="U9PjazDHXPisBTAFixsUx0jUlMvKWXHfoyPxP321lsM" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script type="module" src="/src/theme.ts"></script>
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "gx1c51abqi");
+    </script>
+    <!-- Font Addition -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- Nav Bar -->
+      <nav>
+        <svg
+          class="ham"
+          viewBox="0 0 100 100"
+          onclick="this.classList.toggle('active')"
+        >
+          <path
+            class="line top"
+            d="m30 33h40c13.1 0 14.4 31.8 6.9 33.4c-24.6 5.3 9-52.3-12.8-30.6l-28.3 28.3"
+          />
+          <path
+            class="line middle"
+            d="m70 50c0 0-32.2 0-40 0c-7.8 0-6.4-4.6-6.4-8.6c0-5.9 6.1-11.8 12.3-5.6c6.2 6.2 28.3 28.3 28.3 28.3"
+          />
+          <path
+            class="line bottom"
+            d="m69.6 67.1h-40c-13.1 0-14.4-31.8-6.9-33.4c24.6-5.3-9 52.3 12.8 30.6l28.3-28.3"
+          />
+          <style>
+            .ham {
+              cursor: pointer;
+              -webkit-tap-highlight-color: transparent;
+              transition: transform 400ms;
+              -webkit-user-select: none;
+              user-select: none;
+            }
+
+            .line {
+              fill: none;
+              transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+              stroke-width: 5.5;
+              stroke-linecap: round;
+            }
+
+            .ham .top {
+              stroke-dasharray: 40 172;
+            }
+
+            .ham .middle {
+              stroke-dasharray: 40 111;
+            }
+
+            .ham .bottom {
+              stroke-dasharray: 40 172;
+            }
+
+            .ham.active .top {
+              stroke-dashoffset: -132px;
+            }
+
+            .ham.active .middle {
+              stroke-dashoffset: -71px;
+            }
+
+            .ham.active .bottom {
+              stroke-dashoffset: -132px;
+            }
+          </style>
+        </svg>
+
+        <ul>
+          <!-- #0 is the best practice for empty links -->
+          <li><a href="#0">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header -->
+      <header>
+        <div class="header-content">
+          <h1>Solomon's Web</h1>
+          <h2 class="header-tagline">
+            Coder, Radio Presenter & Website Creator
+          </h2>
+        </div>
+        <div class="header-image fade">
+          <img
+            src="/assets/img/sunset_logo-modified.png"
+            alt="Sol's Portfolio"
+          />
+        </div>
+      </header>
+
+      <main>
+        <!-- About Section -->
+        <section id="about">
+          <h2>About Me</h2>
+          <p>
+            I am a passionate and self-taught programmer, driven by a love for
+            creating engaging and functional web experiences. My journey into
+            the world of coding began with a curiosity to understand how
+            websites work, and it has evolved into a fulfilling endeavor to
+            build innovative solutions.
+          </p>
+          <p>
+            I'm currently focused on a project called
+            <a
+              class="link"
+              href="https://solomonsweb.github.io/"
+              target="_blank"
+              rel="noopener"
+            >Games</a
+            >, where I'm applying my skills in JavaScript, HTML, and CSS to
+            develop an interactive and enjoyable gaming experience. I'm
+            constantly learning and exploring new technologies to enhance my
+            abilities and create even more compelling projects.
+          </p>
+          <p>
+            Beyond coding, I'm also a radio presenter, where I get to share my
+            passion for music and engage with a diverse audience. This
+            experience has honed my communication skills and ability to connect
+            with people, which I believe is essential in both programming and
+            creating user-friendly websites.
+          </p>
+        </section>
+
+        <!-- Languages Section -->
+        <section id="languages">
+          <h2>Languages</h2>
+          <div class="languages-container">
+            <div class="card">
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://www.javascript.com/"
+              >
+                <h3>JavaScript</h3>
+              </a>
+              <div class="visual">
+                <img src="/assets/img/logos/js.svg" alt="JS Logo" />
+              </div>
+              <p>
+                Love JavaScript, it is as you can guess the script bit in a
+                website and it joins it all together.
+              </p>
+            </div>
+
+            <div class="card">
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://html.spec.whatwg.org/multipage/"
+              >
+                <h3>HTML5</h3>
+              </a>
+
+              <div class="visual">
+                <img src="/assets/img/logos/html5.svg" alt="HTML5 Logo" />
+              </div>
+              <p>I love HTML5, its the main body of the website!</p>
+            </div>
+
+            <div class="card">
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://www.w3.org/TR/css-2020/"
+              >
+                <h3>CSS3</h3>
+              </a>
+              <div class="visual no-bdr-radius">
+                <img src="/assets/img/logos/css.svg" alt="CSS Logo" />
+              </div>
+              <p>Gotta like CSS it's the colors of a website!</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+          <h2>My Projects</h2>
+          <div class="projects-container">
+            <div class="project">
+              <div class="project-item">
+                <div class="project-bg">
+                  <img src="/assets/img/games-screenshot.png" alt="Games Project" />
+                </div>
+                <div class="project-description">
+                  <h3>Games</h3>
+                  <p>
+                    A collection of web-based games built with JavaScript, HTML,
+                    and CSS.
+                  </p>
+                  <div class="project-buttons">
+                    <a
+                      href="https://solomonsweb.github.io/"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <img
+                        src="/assets/img/github-mark.svg"
+                        alt="Games GitHub Repo"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Repeated project divs go here... -->
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+          <h2>Contact Me</h2>
+          <div class="contacts-container">
+            <!-- Contact items go here... -->
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <p>
+          Made with
+          <img
+            src="/assets/img/heavy-black-heart_2764.png"
+            alt="❤️"
+            id="hearts"
+          />
+          by Solomon
+          <br />
+          © <span id="year">2025</span> Solomon.
+          <script>
+            document.getElementById("year").innerText =
+              new Date().getFullYear();
+          </script>
+        </p>
+      </footer>
+
+      <!-- Scroll to Top -->
+      <a
+        id="scroll-to-top"
+        onclick="window.scroll({top:0,left:0,behavior:'smooth'});"
+      >
+        <img
+          class="force-invert"
+          src="/assets/img/icons/up.svg"
+          alt="Up Icon"
+        />
+      </a>
+
+      <!-- sparse objects -->
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
